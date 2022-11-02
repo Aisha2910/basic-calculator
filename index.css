@@ -1,0 +1,260 @@
+*{
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-weight: 900;
+    font-family: 'League Spartan', sans-serif;
+    
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root{
+    --mainbg: hsl(222, 26%, 31%);
+    --navbg:hsl(223, 31%, 20%);
+    --screenbg:hsl(224, 36%, 15%);
+    --deletebtn:hsl(225, 21%, 49%);
+    --deleteshadow:hsl(224, 28%, 35%);
+    --equalbtn:hsl(6, 63%, 50%);
+    --equalbtnshadow:hsl(6, 70%, 34%);
+    --keybg:hsl(30, 25%, 89%);
+    --keyshadow:hsl(28, 16%, 65%);
+    --color:hsl(221, 14%, 31%);
+    --white:hsl(0, 0%, 100%);
+    --navcolor:hsl(30, 25%, 89%);
+    --delhover:rgba(158, 183, 241, 0.9);
+    --equalhover:rgba(253, 108, 92, 0.9);
+    --keyhover:hsl(0, 0%, 100%);
+    --equalcolor:hsl(0, 0%, 100%)
+}
+.first-theme{
+    --mainbg: hsl(222, 26%, 31%);
+    --navbg:hsl(223, 31%, 20%);
+    --screenbg:hsl(224, 36%, 15%);
+    --deletebtn:hsl(225, 21%, 49%);
+    --deleteshadow:hsl(224, 28%, 35%);
+    --equalbtn:hsl(6, 63%, 50%);
+    --equalbtnshadow:hsl(6, 70%, 34%);
+    --keybg:hsl(30, 25%, 89%);
+    --keyshadow:hsl(28, 16%, 65%);
+    --color:hsl(221, 14%, 31%);
+    --white:hsl(0, 0%, 100%);
+    --navcolor:hsl(30, 25%, 89%);
+    --delhover:rgba(158, 183, 241, 0.9);
+    --equalhover:rgba(253, 108, 92, 0.9);
+    --keyhover:hsl(0, 0%, 100%);
+    --equalcolor:hsl(0, 0%, 100%)
+}
+.second-theme{
+    --mainbg: hsl(0, 0%, 90%);
+    --navbg:hsl(0, 5%, 81%);
+    --screenbg:hsl(0, 0%, 93%);
+    --deletebtn:hsl(185, 42%, 37%);
+    --deleteshadow:hsl(185, 58%, 25%);
+    --equalbtn:hsl(25, 98%, 40%);
+    --equalbtnshadow:hsl(25, 99%, 27%);
+    --keybg:hsl(45, 7%, 89%);
+    --keyshadow:hsl(35, 11%, 61%);
+    --color:hsl(60, 10%, 19%);
+    --white:hsl(0, 0%, 100%);
+    --navcolor:hsl(60, 10%, 19%);
+    --delhover:rgba(41, 167, 179, 0.7);
+    --equalhover:rgba(249, 114, 17, 0.9);
+    --keyhover:hsl(0, 0%, 100%);
+    --equalcolor:hsl(0, 0%, 100%)
+}
+.third-theme{
+    --mainbg: hsl(268, 75%, 9%);
+    --navbg:hsl(268, 71%, 12%);
+    --screenbg:hsl(268, 71%, 12%);
+    --deletebtn:hsl(281, 89%, 26%);
+    --deleteshadow:hsl(285, 91%, 52%);
+    --equalbtn:hsl(176, 100%, 44%);
+    --equalbtnshadow:hsl(177, 92%, 70%);
+    --keybg:hsl(268, 47%, 21%);
+    --keyshadow:hsl(290, 70%, 36%);
+    --color:hsl(52, 100%, 62%);
+    --white:hsl(0, 0%, 100%);
+    --navcolor:hsl(52, 100%, 62%);
+    --delhover:hsla(281, 77%, 46%,0.9);
+    --equalhover:hsla(176, 83%, 74%,0.9);
+    --keyhover:hsla(268, 66%, 44%,0.9);
+    --equalcolor:hsl(0, 0%, 0%)
+}
+body{
+
+    color:var(--color);
+    min-height: 100vh;
+    background-color: var(--mainbg);
+    font-family: 'League Spartan', sans-serif;
+    display: grid;
+   align-items: center;
+}
+.container{
+
+    max-width: 500px;
+    margin: 1.5em;
+    
+   
+}
+
+nav{
+    color: var(--navcolor);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 1.5em;
+   
+}
+nav div{
+    flex: 1;
+    flex-shrink: 1;
+}
+nav div:nth-child(2){
+    text-align: right;
+}
+.brand{
+    flex: 2;
+    font-size:2em;
+   
+}
+.spans{
+    display: flex;
+    justify-content: space-around;
+}
+.spans span:hover{
+    cursor: pointer;
+}
+
+nav button{
+    height: 25px;
+    width: 100%;
+    border-radius: 20px;
+    background-color:var(--navbg);
+    display: grid;
+    justify-content: left;
+    align-items: center;
+    margin-top: 5px;
+    padding: 0 5px ;
+   
+}
+.first{
+    justify-content: left;
+
+}
+.second{
+    justify-content: center;
+}
+.third{
+    justify-content: right;
+}
+button div{
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    background-color:var(--equalbtn);
+    border-radius: 50%;
+    transition:0.5s;
+
+}
+button div:hover{
+    background-color: var(--equalhover);
+}
+.input{
+    color: var(--navcolor);
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    font-size: 2.5em;
+    text-align: right;
+    height: 3em;
+    background-color: var(--screenbg);
+    display: grid;
+    align-items: center;
+    padding-right: 1.5rem;
+    margin: 2rem auto 1rem auto;
+    border-radius: 10px;
+    
+}
+.button-container{
+    max-width: 100%;
+    border-radius: 10px;
+    display: grid;
+    background-color: var(--navbg);
+    padding:1.5em ;
+    gap: 0.8em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:repeat(4,3em);
+}
+.button-container button{
+    background-color:var(--keybg);
+    cursor: pointer;
+    font-size: 1.5em;
+    color: var(--color);
+    border-radius: 5px;
+    box-shadow: 0px 3px 0px var(--keyshadow);
+    transition: all 0.5s;
+}
+.button-container button:hover{
+    background-color: var(--keyhover);
+}
+button.delete{
+    background-color: var(--deletebtn);
+    color: var(--white);
+    font-size: 1rem;
+    box-shadow: 0px 3px 0px var(--deleteshadow);
+}
+button.delete:hover{
+   background-color: var(--delhover);
+   
+}
+button.reset{
+    font-size: 1rem;
+    grid-column:1/3;
+    padding: 1em;
+    background-color: var(--deletebtn);
+    box-shadow: 0px 3px 0px var(--deleteshadow);
+    color: var(--white);
+  
+}
+button.reset:hover{
+    background-color: var(--delhover);
+ }
+button.equal-to{
+    font-size: 1.5rem;
+    grid-column: 3/-1;
+    background-color: var(--equalbtn);
+    box-shadow: 0px 3px 0px var(--equalbtnshadow);
+    color:var(--equalcolor);
+    
+}
+button.equal-to:hover{
+    background-color: var(--equalhover);
+}
+@media screen and (min-width:600px) {
+    body{
+        display: grid;
+        place-items: center;
+    }
+    .container{
+        width: 100%;
+    }
+    .brand{
+        flex: 3;
+    }
+    .button-container{
+        gap: 1.5em;
+    }
+    .input{
+        font-size: 3em;
+    }
+   .theme{
+    margin-bottom: 5px;
+   }
+    
+   
+    
+}
+
