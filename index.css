@@ -90,14 +90,11 @@ body{
     background-color: var(--mainbg);
     font-family: 'League Spartan', sans-serif;
     display: grid;
-   align-items: center;
+    align-items: center;
 }
 .container{
-
     max-width: 500px;
-    margin: 1.5em;
-    
-   
+    margin: 1.5em;  
 }
 
 nav{
@@ -128,18 +125,19 @@ nav div:nth-child(2){
     cursor: pointer;
 }
 
-nav button{
+.toggle-container{
     height: 25px;
     width: 100%;
     border-radius: 20px;
     background-color:var(--navbg);
-    display: grid;
+    display: flex;
     justify-content: left;
     align-items: center;
     margin-top: 5px;
     padding: 0 5px ;
    
 }
+
 .first{
     justify-content: left;
 
@@ -150,7 +148,7 @@ nav button{
 .third{
     justify-content: right;
 }
-button div{
+.toggler{
     cursor: pointer;
     width: 18px;
     height: 18px;
@@ -159,7 +157,7 @@ button div{
     transition:0.5s;
 
 }
-button div:hover{
+.toggler:hover{
     background-color: var(--equalhover);
 }
 .input{
@@ -197,7 +195,7 @@ button div:hover{
     box-shadow: 0px 3px 0px var(--keyshadow);
     transition: all 0.5s;
 }
-.button-container button:hover{
+.button-container button:hover,.button-container button:focus {
     background-color: var(--keyhover);
 }
 button.delete{
@@ -206,7 +204,7 @@ button.delete{
     font-size: 1rem;
     box-shadow: 0px 3px 0px var(--deleteshadow);
 }
-button.delete:hover{
+button.delete:hover, button.delete:focus{
    background-color: var(--delhover);
    
 }
@@ -219,7 +217,7 @@ button.reset{
     color: var(--white);
   
 }
-button.reset:hover{
+button.reset:hover,button.reset:focus{
     background-color: var(--delhover);
  }
 button.equal-to{
@@ -230,7 +228,7 @@ button.equal-to{
     color:var(--equalcolor);
     
 }
-button.equal-to:hover{
+button.equal-to:hover,button.equal-to:focus{
     background-color: var(--equalhover);
 }
 @media screen and (min-width:600px) {
